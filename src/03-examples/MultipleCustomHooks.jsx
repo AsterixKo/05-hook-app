@@ -1,12 +1,15 @@
+import { useCounter } from "../hooks/useCounter";
 import { useFetch } from "../hooks/useFetch";
 
 export const MultipleCustomHooks = () => {
+  const { counter, increment } = useCounter(1);
   const { data, isLoading, hasError } = useFetch(
-    "https://pokeapi.co/api/v2/pokemon/1"
+    `https://pokeapi.co/api/v2/pokemon/${counter}`
   );
   const { id, name } = !!data && data;
+
   // console.log(data, isLoading, hasError);
-  console.log(JSON.stringify(data));
+  // console.log(JSON.stringify(data));
 
   return (
     <>
@@ -22,7 +25,13 @@ export const MultipleCustomHooks = () => {
         </blockquote>
       )}
 
-      <button className="btn btn-primary">Next Quote</button>
+      <button
+        disabled={isLoading}
+        className="btn btn-primary"
+        onClick={() => increment()}
+      >
+        Next Quote
+      </button>
     </>
   );
 };
