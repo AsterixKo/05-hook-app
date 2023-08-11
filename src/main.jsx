@@ -14,8 +14,10 @@ import { Padre } from "./07-tarea-memo/Padre";
 // import { FormWithCustomHook } from "./02-useEffect/FormWithCustomHook";
 // import { MultipleCustomHooks } from "./03-examples/MultipleCustomHooks";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  // <React.StrictMode>
-  <Padre />
-  // </React.StrictMode>
-);
+import "./08-useReducer/intro-reducer";
+
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//   // <React.StrictMode>
+//   <Padre />
+//   // </React.StrictMode>
+// );
