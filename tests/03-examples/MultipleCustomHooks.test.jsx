@@ -44,7 +44,7 @@ describe("Pruebas en <MultipleCustomHooks />", () => {
     });
 
     render(<MultipleCustomHooks />);
-    screen.debug();
+    // screen.debug();
     expect(screen.getByText("Hola Mundo")).toBeTruthy();
     expect(screen.getByText("1")).toBeTruthy();
 
@@ -60,7 +60,7 @@ describe("Pruebas en <MultipleCustomHooks />", () => {
     });
 
     render(<MultipleCustomHooks />);
-    screen.debug();
+    // screen.debug();
     expect(screen.getByText("Hola Mundo")).toBeTruthy();
     expect(screen.getByText("1")).toBeTruthy();
 
