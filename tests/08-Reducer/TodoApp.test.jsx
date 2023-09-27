@@ -8,7 +8,7 @@ describe("Pruebas en <TodoApp />", () => {
   useTodos.mockReturnValue({
     todos: [
       { id: 1, description: "Todo #1", done: false },
-      { id: 1, description: "Todo #2", done: true },
+      { id: 2, description: "Todo #2", done: true },
     ],
     todosCount: 2,
     pendingTodosCount: 1,
