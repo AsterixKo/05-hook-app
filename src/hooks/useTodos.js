@@ -47,18 +47,18 @@ export const useTodos = () => {
     });
   };
 
-  const todosCount = () => {
-    return todos.length;
-  };
+  // const todosCount = () => {
+  //   return todos.length;
+  // };
 
-  const pendingTodosCount = () => {
-    return todos.filter((todo) => !todo.done).length;
-  };
+  // const pendingTodosCount = () => {
+  //   return todos.filter((todo) => !todo.done).length;
+  // };
 
   return {
     todos,
-    todosCount,
-    pendingTodosCount,
+    todosCount: todos.length,
+    pendingTodosCount: todos.filter((todo) => !todo.done).length,
     handleNewTodo,
     handleDeleteTodo,
     handleToggleTodo,

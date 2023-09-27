@@ -15,15 +15,16 @@ import "./index.css";
 // import { SimpleForm } from "./02-useEffect/SimpleForm";
 // import { FormWithCustomHook } from "./02-useEffect/FormWithCustomHook";
 // import { MultipleCustomHooks } from "./03-examples/MultipleCustomHooks";
-// import { TodoApp } from "./08-useReducer/TodoApp";
-import { MainApp } from "./09-useContext/MainApp";
+import { TodoApp } from "./08-useReducer/TodoApp";
+// import { MainApp } from "./09-useContext/MainApp";
 
 // import "./08-useReducer/intro-reducer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     {/* <React.StrictMode> */}
-    <MainApp />
+    <TodoApp />
+    {/* <MainApp /> */}
     {/* </React.StrictMode> */}
   </BrowserRouter>
 );
