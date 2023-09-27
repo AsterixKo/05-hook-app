@@ -49,7 +49,7 @@ describe("Pruebas en todoReducer", () => {
     expect(newState[0].done).toBe(true);
 
     const newState2 = todoReducer(newState, action);
-    console.log(newState);
+    // console.log(newState);
     expect(newState2[0].done).toBe(false);
   });
 });
